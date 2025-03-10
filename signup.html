@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Crazy Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="signup.css" />
+</head>
+<body>  
+     
+<section class="signup-container">
+  <div class="signup-card">
+    <h2>Sign Up</h2>
+    <form id="signup-form">
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Full Name" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email Address" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Confirm Password" required />
+      </div>
+
+      <button type="submit" class="signup-btn">Create Account</button>
+
+      <div class="or-divider">
+        <span>OR</span>
+      </div>
+
+      <div class="social-signup">
+        <button type="button" class="google-btn">
+          <i class="fab fa-google"></i> Sign Up with Google
+        </button>
+        <button type="button" class="apple-btn">
+          <i class="fab fa-apple"></i> Sign Up with Apple
+        </button>
+        <button type="button" class="facebook-btn">
+          <i class="fab fa-facebook-f"></i> Sign Up with Facebook
+        </button>
+      </div>
+
+      <p class="login-link">
+        Already have an account? <a href="login.html">Log In</a>
+      </p>
+    </form>
+  </div>
+</section>
+<script src="signup.js"></script>
+
+  
+</body>
+</html>

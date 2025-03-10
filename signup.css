@@ -1,0 +1,198 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Container Styling */
+  .signup-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.8s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Sign-Up Card Styling */
+  .signup-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff9900;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Input Group Styling */
+  .input-group {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group:hover,
+  .input-group:focus-within {
+    border-color: #ff9900;
+    box-shadow: 0 4px 12px rgba(255, 153, 0, 0.2);
+  }
+  
+  .input-group i {
+    color: #999;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Sign-Up Button Styling */
+  .signup-btn {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .signup-btn:hover {
+    background-color: #ff8800;
+    box-shadow: 0 6px 20px rgba(255, 136, 0, 0.4);
+  }
+  
+  /* OR Divider */
+  .or-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+  
+  .or-divider span {
+    background-color: #fff;
+    padding: 0 10px;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .or-divider::before,
+  .or-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  /* Social Sign-Up Styling */
+  .social-signup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .social-signup button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Google Button */
+  .google-btn {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .google-btn:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Apple Button */
+  .apple-btn {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .apple-btn:hover {
+    background-color: #222;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Facebook Button */
+  .facebook-btn {
+    background-color: #1877f2;
+    color: #fff;
+  }
+  
+  .facebook-btn:hover {
+    background-color: #165dbb;
+    box-shadow: 0 4px 12px rgba(24, 119, 242, 0.4);
+  }
+  
+  /* Login Link Styling */
+  .login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .login-link a {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }  
