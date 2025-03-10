@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Men's Shirts - Crazy Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="mens-shirts.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="logo">Crazy Store</a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="Men-Shirts.html" class="dropdown-item">Men's Shirts</a></li>
+          <li><a href="Boys-Shirts.html" class="dropdown-item">Boy's Shirts</a></li>
+          <li><a href="Unisex-Shirts.html" class="dropdown-item">Unisex Shirts</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Discover the Latest <span class="highlight">Men's Shirts</span></h1>
+    <p>Upgrade your style with top-quality fabrics and trending designs.</p>
+    <a href="#products" class="cta-button">Shop Now</a>
+  </div>
+</section>
+
+<!-- Filters & Sorting -->
+<div class="filters-sorting">
+  <div class="filter-section">
+    <select id="size-filter">
+      <option value="">Size</option>
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+      <option value="XL">XL</option>
+    </select>
+    <select id="color-filter">
+      <option value="">Color</option>
+      <option value="White">White</option>
+      <option value="Black">Black</option>
+      <option value="Blue">Blue</option>
+      <option value="Red">Red</option>
+    </select>
+  </div>
+
+  <div class="sort-section">
+    <select id="sort-options">
+      <option value="popularity">Sort by Popularity</option>
+      <option value="price-low-high">Price: Low to High</option>
+      <option value="price-high-low">Price: High to Low</option>
+    </select>
+  </div>
+</div>
+
+<!-- Product Grid -->
+<section class="product-grid" id="products">
+  <!-- Sample Product Cards -->
+  <div class="product-card">
+    <img src="shirt1.jpg" alt="Classic White Shirt">
+    <div class="product-info">
+      <h3>Classic White Shirt</h3>
+      <p>$29.99</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="shirt2.jpg" alt="Casual Blue Shirt">
+    <div class="product-info">
+      <h3>Casual Blue Shirt</h3>
+      <p>$34.99</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="shirt3.jpg" alt="Stylish Black Shirt">
+    <div class="product-info">
+      <h3>Stylish Black Shirt</h3>
+      <p>$39.99</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Crazy Store. Managed by <strong>1605 Developers</strong>. Crafted with ❤️ for you.</p>
+  </div>
+</footer>
+
+<script src="mens-shirts.js"></script>
+</body>
+</html>
