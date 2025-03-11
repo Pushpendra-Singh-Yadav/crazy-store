@@ -11,8 +11,25 @@
 <div class="login-container">
   <form class="login-form" id="loginForm">
     <h2>Welcome Back!</h2>
-    <p>Please login to your account</p>
+    <p class="subtitle">Log in to continue exploring Crazy Store</p>
     
+    <!-- Login with social media -->
+    <div class="social-login">
+      <button type="button" class="google-login" id="googleLogin">
+        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google" />
+        Continue with Google
+      </button>
+      <button type="button" class="other-login" id="otherLogin">
+        <img src="https://img.icons8.com/ios-filled/50/000000/apple-logo.png" alt="Apple" />
+        Continue with Apple
+      </button>
+    </div>
+    
+    <div class="divider">
+      <span>OR</span>
+    </div>
+
+    <!-- Login with email -->
     <div class="input-group">
       <input type="email" id="email" placeholder="Email" required />
     </div>

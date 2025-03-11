@@ -26,8 +26,8 @@
       <li class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
         <ul class="dropdown-menu">
-          <li><a href="mens-shirts.html" class="dropdown-item">Men's Shirts</a></li>
-          <li><a href="boys-shirts.html" class="dropdown-item">Boy's Shirts</a></li>
+          <li><a href="Men-Shirts.html" class="dropdown-item">Men's Shirts</a></li>
+          <li><a href="Boys-Shirts.html" class="dropdown-item">Boy's Shirts</a></li>
           <li><a href="unisex-shirts.html" class="dropdown-item">Unisex Shirts</a></li>
         </ul>
       </li>
@@ -49,15 +49,18 @@
 <!-- Filters & Sorting -->
 <div class="filters-sorting">
   <div class="filter-section">
-    <select id="size-filter">
-      <option value="">Size</option>
+    <label for="size-filter" class="visually-hidden">Filter by Size</label>
+    <select id="size-filter" aria-label="Filter by Size">
+      <option value="" disabled selected>Filter by Size</option>
       <option value="S">Small</option>
       <option value="M">Medium</option>
       <option value="L">Large</option>
       <option value="XL">XL</option>
     </select>
-    <select id="color-filter">
-      <option value="">Color</option>
+
+    <label for="color-filter" class="visually-hidden">Filter by Color</label>
+    <select id="color-filter" aria-label="Filter by Color">
+      <option value="" disabled selected>Filter by Color</option>
       <option value="White">White</option>
       <option value="Black">Black</option>
       <option value="Blue">Blue</option>
@@ -66,7 +69,8 @@
   </div>
 
   <div class="sort-section">
-    <select id="sort-options">
+    <label for="sort-options" class="visually-hidden">Sort Options</label>
+    <select id="sort-options" aria-label="Sort Options">
       <option value="popularity">Sort by Popularity</option>
       <option value="price-low-high">Price: Low to High</option>
       <option value="price-high-low">Price: High to Low</option>
@@ -75,22 +79,109 @@
 </div>
 
 <!-- Product Grid -->
+<!-- Product Grid -->
 <section class="product-grid" id="products">
-  <!-- Sample Product Card -->
   <div class="product-card">
-    <img src="assets/shirt1.jpg" alt="Shirt 1">
+    <img src="images/shirt1.jpeg" alt="Classic White Shirt">
     <div class="product-info">
-      <h3>Casual White Shirt</h3>
-      <p>$19.99</p>
+      <h3>Classic White Shirt</h3>
+      <p>$29.99</p>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
   </div>
 
   <div class="product-card">
-    <img src="assets/shirt2.jpg" alt="Shirt 2">
+    <img src="images/shirt2.webp" alt="Casual Blue Shirt">
     <div class="product-info">
-      <h3>Blue Denim Shirt</h3>
-      <p>$24.99</p>
+      <h3>Casual Blue Shirt</h3>
+      <p>$34.99</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/shirt3.webp" alt="Stylish Black Shirt">
+    <div class="product-info">
+      <h3>Stylish Black Shirt</h3>
+      <p>$39.99</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product-card">
+    <img src="images/shirt4.webp" alt="Classic White Shirt">
+    <div class="product-info">
+      <h3>Classic White Shirt</h3>
+      <p>$29.99</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/shirt5.webp" alt="Casual Blue Shirt">
+    <div class="product-info">
+      <h3>Casual Blue Shirt</h3>
+      <p>$34.99</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/shirt6.webp" alt="Stylish Black Shirt">
+    <div class="product-info">
+      <h3>Stylish Black Shirt</h3>
+      <p>$39.99</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product-card">
+    <img src="images/shirt7.jpeg" alt="Classic White Shirt">
+    <div class="product-info">
+      <h3>Classic White Shirt</h3>
+      <p>$29.99</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/shirt8.jpeg" alt="Casual Blue Shirt">
+    <div class="product-info">
+      <h3>Casual Blue Shirt</h3>
+      <p>$34.99</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/shirt9.jpeg" alt="Stylish Black Shirt">
+    <div class="product-info">
+      <h3>Stylish Black Shirt</h3>
+      <p>$39.99</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product-card">
+    <img src="images/shirt10.jpeg" alt="Classic White Shirt">
+    <div class="product-info">
+      <h3>Classic White Shirt</h3>
+      <p>$29.99</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/shirt11.webp" alt="Casual Blue Shirt">
+    <div class="product-info">
+      <h3>Casual Blue Shirt</h3>
+      <p>$34.99</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/shirt12.webp" alt="Stylish Black Shirt">
+    <div class="product-info">
+      <h3>Stylish Black Shirt</h3>
+      <p>$39.99</p>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
   </div>
