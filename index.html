@@ -38,13 +38,12 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">About Us</a>
+          <a href="#about" class="nav-link">About Us</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
+          <a href="#" class="nav-link" id="contact-link">Contact</a>
         </li>
       </ul>
-
       <!-- Action Buttons -->
       <div class="nav-buttons">
         <a href="#" class="nav-button login-button">Login</a>
@@ -52,7 +51,25 @@
       </div>
     </div>
   </nav>
-  
+  <div id="contact-modal" class="contact-modal">
+    <div class="contact-modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Please fill out the form below or reach us at:</p>
+      <p><strong>Email:</strong> support@crazystore.com</p>
+      <p><strong>Phone:</strong> +1-800-123-4567</p>
+      <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <!-- Hidden input for Netlify -->
+        <input type="hidden" name="form-name" value="contact" />
+        
+        <!-- Visible form fields -->
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>      
+    </div>
+  </div>
   <section class="hero">
     <!-- Overlay for the Gradient Background -->
     <div class="hero-overlay"></div>
@@ -73,7 +90,7 @@
         <a href="Shop page/shop.html" class="cta-button" id="shopNowButton">Shop Now</a>
       
         <!-- "Explore More" button links to a specific section on the same page -->
-        <a href="features-section" class="secondary-button" id="exploreMoreButton">Explore More</a>
+        <a href="#features-section" class="secondary-button" id="exploreMoreButton">Explore More</a>
       </div>
       
     </div>
@@ -91,11 +108,13 @@
       <div class="floating-glow"></div>
     </div>
   </section>
-  
-  <section class="features-section">
+
+  <section id="features-section" class="features-section">
     <div class="container">
       <h2 class="section-title">Why Our Shirts Are the Best</h2>
-      <p class="section-description">Unmatched quality, unparalleled comfort, and trendy designs crafted just for you.</p>
+      <p class="section-description">
+        Unmatched quality, unparalleled comfort, and trendy designs crafted just for you.
+      </p>
       <div class="features-grid">
         <!-- Feature 1 -->
         <div class="feature-item">
@@ -103,7 +122,9 @@
             <i class="fas fa-tshirt"></i>
           </div>
           <h3 class="feature-title">High-Quality Fabric</h3>
-          <p class="feature-description">Soft, breathable, and durable materials for all-day comfort.</p>
+          <p class="feature-description">
+            Soft, breathable, and durable materials for all-day comfort.
+          </p>
         </div>
         <!-- Feature 2 -->
         <div class="feature-item">
@@ -111,7 +132,9 @@
             <i class="fas fa-palette"></i>
           </div>
           <h3 class="feature-title">Vibrant Colors</h3>
-          <p class="feature-description">Fade-resistant colors to keep your style fresh and bold.</p>
+          <p class="feature-description">
+            Fade-resistant colors to keep your style fresh and bold.
+          </p>
         </div>
         <!-- Feature 3 -->
         <div class="feature-item">
@@ -119,7 +142,9 @@
             <i class="fas fa-leaf"></i>
           </div>
           <h3 class="feature-title">Eco-Friendly</h3>
-          <p class="feature-description">Sustainably made to reduce our environmental footprint.</p>
+          <p class="feature-description">
+            Sustainably made to reduce our environmental footprint.
+          </p>
         </div>
         <!-- Feature 4 -->
         <div class="feature-item">
@@ -127,7 +152,9 @@
             <i class="fas fa-dollar-sign"></i>
           </div>
           <h3 class="feature-title">Affordable Luxury</h3>
-          <p class="feature-description">Premium quality at prices that won’t empty your wallet.</p>
+          <p class="feature-description">
+            Premium quality at prices that won’t empty your wallet.
+          </p>
         </div>
         <!-- Feature 5 -->
         <div class="feature-item">
@@ -135,7 +162,9 @@
             <i class="fas fa-shipping-fast"></i>
           </div>
           <h3 class="feature-title">Fast & Reliable Shipping</h3>
-          <p class="feature-description">Quick delivery to get your favorite styles in time.</p>
+          <p class="feature-description">
+            Quick delivery to get your favorite styles in time.
+          </p>
         </div>
         <!-- Feature 6 -->
         <div class="feature-item">
@@ -143,7 +172,9 @@
             <i class="fas fa-exchange-alt"></i>
           </div>
           <h3 class="feature-title">Easy Returns</h3>
-          <p class="feature-description">Hassle-free exchanges and returns for complete satisfaction.</p>
+          <p class="feature-description">
+            Hassle-free exchanges and returns for complete satisfaction.
+          </p>
         </div>
       </div>
     </div>
@@ -151,102 +182,145 @@
   
   <section id="about" class="about">
     <div class="container">
-      <div class="about-content">
+      <!-- Introduction -->
+      <div class="about-intro">
         <h2 class="about-title">About <span>Crazy Store</span></h2>
         <p class="about-description">
-          At Crazy Store, we're redefining the way you shop for shirts. As a new and ambitious startup, our mission is to deliver premium-quality shirts that combine style, comfort, and affordability. With a passion for innovation and attention to detail, we aim to make every purchase an unforgettable experience.
+          Welcome to Crazy Store, where passion meets innovation. As a new and dynamic startup, we aim to transform the way you experience fashion. Every shirt we create combines unparalleled craftsmanship, modern aesthetics, and sustainable practices to give you more than just clothing — we give you confidence.
         </p>
-        <p class="about-description">
-          Crazy Store was born from the idea that fashion should be accessible, sustainable, and tailored to your unique preferences. From handpicked fabrics to modern designs, we focus on providing shirts that not only look great but also feel amazing.
-        </p>
-        <div class="about-values">
-          <div class="value-item">
-            <i class="fas fa-seedling"></i>
-            <h3>Sustainability</h3>
-            <p>We are committed to eco-friendly practices, ensuring minimal environmental impact in every shirt we create.</p>
+      </div>
+  
+      <!-- Vision, Mission, and Values -->
+      <div class="about-highlights">
+        <div class="highlight-item">
+          <i class="fas fa-globe"></i>
+          <h3>Our Vision</h3>
+          <p>To redefine affordable luxury in fashion while prioritizing sustainability and customer satisfaction across the globe.</p>
+        </div>
+        <div class="highlight-item">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Our Mission</h3>
+          <p>To design shirts that seamlessly combine style, comfort, and innovation, providing an unforgettable shopping experience.</p>
+        </div>
+        <div class="highlight-item">
+          <i class="fas fa-heart"></i>
+          <h3>Core Values</h3>
+          <p>Integrity, creativity, and environmental consciousness are at the heart of everything we do.</p>
+        </div>
+      </div>
+  
+      <!-- Why Choose Us -->
+      <div class="why-choose">
+        <h3 class="section-subtitle">Why Choose Crazy Store?</h3>
+        <div class="choose-grid">
+          <div class="choose-item">
+            <i class="fas fa-tshirt"></i>
+            <h4>Top-Quality Fabrics</h4>
+            <p>We use handpicked, breathable, and soft materials to ensure premium comfort and durability.</p>
           </div>
-          <div class="value-item">
-            <i class="fas fa-heart"></i>
-            <h3>Customer First</h3>
-            <p>Your satisfaction drives everything we do. From personalized support to hassle-free shopping, we put you first.</p>
+          <div class="choose-item">
+            <i class="fas fa-recycle"></i>
+            <h4>Eco-Friendly Practices</h4>
+            <p>Our sustainable production methods minimize environmental impact without compromising quality.</p>
           </div>
-          <div class="value-item">
+          <div class="choose-item">
+            <i class="fas fa-users"></i>
+            <h4>Customer-First Approach</h4>
+            <p>Your satisfaction is our priority. From easy returns to personalized service, we care for you at every step.</p>
+          </div>
+          <div class="choose-item">
+            <i class="fas fa-palette"></i>
+            <h4>Modern Aesthetics</h4>
+            <p>Our designs blend timeless elegance with contemporary trends, ensuring a look you’ll love.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Fun Facts -->
+      <div class="fun-facts">
+        <h3 class="section-subtitle">What Makes Us Special?</h3>
+        <div class="facts-grid">
+          <div class="fact-item">
+            <i class="fas fa-leaf"></i>
+            <h4>100% Sustainable</h4>
+            <p>Our commitment to eco-conscious practices ensures that your style leaves a positive impact.</p>
+          </div>
+          <div class="fact-item">
             <i class="fas fa-pencil-ruler"></i>
-            <h3>Design Excellence</h3>
-            <p>Our shirts are crafted with precision and creativity, offering a perfect blend of timeless and contemporary styles.</p>
+            <h4>Design Expertise</h4>
+            <p>Our shirts are crafted with a keen eye for detail, offering the perfect fit and style for every occasion.</p>
+          </div>
+          <div class="fact-item">
+            <i class="fas fa-handshake"></i>
+            <h4>Trusted Partnerships</h4>
+            <p>We collaborate with ethical suppliers and organizations to maintain quality and sustainability.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  
+  </section>  
+
+  <!-- Scroll Bar Styling  -->
+<div id="scroll-bar-container"></div>
+
+<!-- Go to Top Button -->
+<button id="goToTop" aria-label="Go to Top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
   <footer class="footer">
-    <div class="container footer-grid">
-      <!-- Logo and About -->
-      <div class="footer-section">
-        <h3 class="footer-logo">Crazy Store</h3>
-        <p>Where style meets comfort. Premium shirts for every occasion, designed for those who dare to be different.</p>
+    <div class="footer-container">
+      <!-- Brand and Tagline -->
+      <div class="footer-brand">
+        <h1 class="brand-logo">Crazy Store</h1>
+        <p class="tagline">
+          Redefining fashion with premium shirts that blend style and comfort. Experience timeless elegance.
+        </p>
       </div>
   
-      <!-- Quick Links -->
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="#home">Home</a></li>
+      <!-- Navigation Links -->
+      <div class="footer-nav">
+        <h3>Quick Links</h3>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="Shop page/shop.html">Products</a></li>
         </ul>
       </div>
-  
       <!-- Contact Information -->
-      <div class="footer-section">
-        <h4>Contact Us</h4>
-        <ul class="contact-info">
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <ul class="contact-list">
           <li><i class="fas fa-phone-alt"></i> +91-9465265663</li>
           <li><i class="fas fa-envelope"></i> support@crazystore.com</li>
           <li><i class="fas fa-map-marker-alt"></i> Punjab, India</li>
         </ul>
       </div>
-  
-      <!-- Newsletter -->
-      <div class="footer-section">
-        <h4>Stay Connected</h4>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Your Email" required>
-          <button type="submit" aria-label="Submit Email"><i class="fas fa-paper-plane"></i></button>
-        </form>
-      </div>
-    </div>
-  
-    <div class="footer-bottom">
-      <div class="container">
-        <p>
-          &copy; 2025 <span>Crazy Store</span>. All rights reserved. <br>
-          Crafted with <span class="heart">&hearts;</span> for you. <br>
-          Managed by
-          <a href="https://www.animweb-technologies.com" target="_blank" rel="noopener noreferrer" class="footer-link">
-            Animweb Technologies
-          </a>.
-        </p>
-        <div class="social-links">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+      <!-- Social Media -->
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
           </a>
         </div>
       </div>
     </div>
-  </footer>    
-  
+    <div class="footer-bottom">
+      <p>
+        &copy; 2025 Crazy Store. All rights reserved.  
+        Crafted with ❤️ by <a href="https://www.animweb-technologies.com" target="_blank" rel="noopener noreferrer">Animweb Technologies</a>.
+      </p>
+    </div>
+  </footer>   
 </body>
 </html>
