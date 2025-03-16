@@ -16,11 +16,11 @@
   <ul class="nav-menu">
     <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
     <li class="nav-item dropdown">
-      <a href="#" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+      <a href="#" class="nav-link dropdown-toggle">Products</a>
       <ul class="dropdown-menu">
-        <li><a href="Men-Shirts.html" class="dropdown-item">Men's Shirts</a></li>
-        <li><a href="Boys-Shirts.html" class="dropdown-item">Boy's Shirts</a></li>
-        <li><a href="Unisex-Shirts.html" class="dropdown-item">Unisex Shirts</a></li>
+        <li><a href="Shop page/shop.html" class="dropdown-link">Men's Shirts</a></li>
+        <li><a href="Shop page/shop.html" class="dropdown-link">Women's Shirts</a></li>
+        <li><a href="Shop page/shop.html" class="dropdown-link">Unisex Shirts</a></li>
       </ul>
     </li>
     <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
@@ -30,26 +30,28 @@
 
 <!-- Hero Section -->
 <section class="hero-section">
-  <h1>Discover the Latest <span class="highlight">Men's Shirts</span></h1>
-  <p>Upgrade your style with top-quality fabrics and trending designs.</p>
-  <a href="#products" class="cta-button">Shop Now</a>
+  <div class="hero-content">
+    <h1>Discover the Latest <span class="highlight">Men's Shirts</span></h1>
+    <p>Upgrade your wardrobe with top-quality fabrics and trending designs. Shop now for unbeatable style!</p>
+    <a href="#products" class="cta-button">Shop Now</a>
+  </div>
 </section>
 
 <!-- Filters & Sorting -->
 <div class="filters-sorting">
   <div class="filter-section">
-    <label for="size-filter" class="visually-hidden">Filter by Size</label>
-    <select id="size-filter" aria-label="Filter by Size">
-      <option value="" disabled selected>Filter by Size</option>
+    <label for="size-filter" class="filter-label">Size</label>
+    <select id="size-filter" class="filter-dropdown" aria-label="Filter by Size">
+      <option value="" disabled selected>Select Size</option>
       <option value="S">Small</option>
       <option value="M">Medium</option>
       <option value="L">Large</option>
       <option value="XL">XL</option>
     </select>
 
-    <label for="color-filter" class="visually-hidden">Filter by Color</label>
-    <select id="color-filter" aria-label="Filter by Color">
-      <option value="" disabled selected>Filter by Color</option>
+    <label for="color-filter" class="filter-label">Color</label>
+    <select id="color-filter" class="filter-dropdown" aria-label="Filter by Color">
+      <option value="" disabled selected>Select Color</option>
       <option value="White">White</option>
       <option value="Black">Black</option>
       <option value="Blue">Blue</option>
@@ -58,9 +60,9 @@
   </div>
 
   <div class="sort-section">
-    <label for="sort-options" class="visually-hidden">Sort Options</label>
-    <select id="sort-options" aria-label="Sort Options">
-      <option value="popularity">Sort by Popularity</option>
+    <label for="sort-options" class="filter-label">Sort By</label>
+    <select id="sort-options" class="filter-dropdown" aria-label="Sort Options">
+      <option value="popularity">Popularity</option>
       <option value="price-low-high">Price: Low to High</option>
       <option value="price-high-low">Price: High to Low</option>
     </select>
