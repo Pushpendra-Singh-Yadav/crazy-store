@@ -137,7 +137,6 @@ body {
     opacity: 1; /* Always visible on small screens */
     transform: none;
   }
-
   .dropdown-menu .dropdown-link {
     padding: 10px 15px;
     font-size: 0.85rem;
