@@ -5,37 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Men's Shirts - Crazy Store</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="shop.css" />
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar">
-  <a href="../index.html" class="logo">Crazy Store</a>
-  <ul class="nav-menu">
-    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-    <li class="nav-item dropdown">
-      <a href="#" class="nav-link dropdown-toggle">Products</a>
-      <ul class="dropdown-menu">
-        <li><a href="Shop page/shop.html" class="dropdown-link">Men's Shirts</a></li>
-        <li><a href="Shop page/shop.html" class="dropdown-link">Women's Shirts</a></li>
-        <li><a href="Shop page/shop.html" class="dropdown-link">Unisex Shirts</a></li>
-      </ul>
-    </li>
-    <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
-    <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
-  </ul>
-</nav>
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <span class="logo-highlight">Crazy</span> Store
+      </a>
 
-<!-- Hero Section -->
-<section class="hero-section">
-  <div class="hero-content">
-    <h1>Discover the Latest <span class="highlight">Men's Shirts</span></h1>
-    <p>Upgrade your wardrobe with top-quality fabrics and trending designs. Shop now for unbeatable style!</p>
-    <a href="#products" class="cta-button">Shop Now</a>
+      <!-- Hamburger Toggle -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle">Products</a>
+          <ul class="dropdown-menu">
+            <li><a href="Shop page/shop.html" class="dropdown-link">Men's Shirts</a></li>
+            <li><a href="Shop page/shop.html" class="dropdown-link">Women's Shirts</a></li>
+            <li><a href="Shop page/shop.html" class="dropdown-link">Unisex Shirts</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" id="contact-link">Contact</a>
+        </li>
+      </ul>
+      <!-- Action Buttons -->
+      <div class="nav-buttons">
+        <a href="#" class="nav-button login-button">Login</a>
+        <a href="#" class="nav-button signup-button">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+  <div id="contact-modal" class="contact-modal">
+    <div class="contact-modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Please fill out the form below or reach us at:</p>
+      <p><strong>Email:</strong> support@crazystore.com</p>
+      <p><strong>Phone:</strong> +1-800-123-4567</p>
+      <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <!-- Hidden input for Netlify -->
+        <input type="hidden" name="form-name" value="contact" />
+        
+        <!-- Visible form fields -->
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>      
+    </div>
   </div>
-</section>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1 class="hero-title">
+        Discover the Latest <span class="highlight">Men's Shirts</span>
+      </h1>
+      <p class="hero-subtitle">
+        Upgrade your wardrobe with premium fabrics and timeless designs. Redefine your style today!
+      </p>
+      <a href="#products" class="cta-button">Shop Now</a>
+    </div>
+  </section>
 
 <!-- Filters & Sorting -->
 <div class="filters-sorting">

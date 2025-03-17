@@ -1,3 +1,44 @@
+// Elements
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+// Toggle Menu
+navToggle.addEventListener('click', () => {
+  const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+  navToggle.setAttribute('aria-expanded', !isExpanded);
+  navMenu.classList.toggle('active');
+});
+
+// Close menu on clicking outside
+document.addEventListener('click', (e) => {
+  if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+    navMenu.classList.remove('active');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+});
+// JavaScript for Contact Modal
+const contactLink = document.getElementById("contact-link");
+const contactModal = document.getElementById("contact-modal");
+const closeModal = document.querySelector(".close-modal");
+
+// Open Modal
+contactLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  contactModal.style.display = "flex";
+});
+
+// Close Modal on Close Button
+closeModal.addEventListener("click", () => {
+  contactModal.style.display = "none";
+});
+
+// Close Modal by Clicking Outside
+contactModal.addEventListener("click", (e) => {
+  if (e.target === contactModal) {
+    contactModal.style.display = "none";
+  }
+});
+
 // Filters and Sorting Functionality
 document.addEventListener("DOMContentLoaded", () => {
   const sizeFilter = document.getElementById("size-filter");
@@ -27,21 +68,13 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Sorting by:", sortOptions.value);
   }
 });
-// Elements
-const navToggle = document.getElementById('nav-toggle');
-const navMenu = document.getElementById('nav-menu');
 
-// Toggle Menu
-navToggle.addEventListener('click', () => {
-  const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-  navToggle.setAttribute('aria-expanded', !isExpanded);
-  navMenu.classList.toggle('active');
-});
-
-// Close menu on clicking outside
-document.addEventListener('click', (e) => {
-  if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
-    navMenu.classList.remove('active');
-    navToggle.setAttribute('aria-expanded', 'false');
+// Navbar scroll background change
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
   }
 });
