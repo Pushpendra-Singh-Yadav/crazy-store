@@ -380,7 +380,6 @@ body {
 
 }
 
-
 /* Hero Content */
 .hero-content {
   z-index: 2;
@@ -392,42 +391,55 @@ body {
   transform: translateY(30px);
 }
 
+/* Hero Heading */
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: #ffffff;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  line-height: 1.4;
+  font-family: 'Merriweather', serif; /* Royal font style */
 }
 
 .hero h1 .highlight {
-  font-size: 3.7rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, #facc15, #f97316, #fb923c);
-  -webkit-background-clip: text; /* Prefixed version */
-  background-clip: text; /* Standard version */
+  font-size: 3.2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #f9c802, #e07f0d, #cd5c0f);
+  -webkit-background-clip: text; /* Prefixed version for Safari/Chrome */
+  background-clip: text; /* Standard property */
   color: transparent;
-  animation: shine 3s linear infinite;
+  animation: gradient-glow 4s ease infinite;
   display: inline-block;
+  text-transform: capitalize;
 }
 
+/* Brand Name */
 .brand-name {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 900;
   color: transparent;
-  background: linear-gradient(90deg, #ffcc00, #f97316, #ffa500);
-  -webkit-background-clip: text; /* For Chrome, Safari */
+  background: linear-gradient(90deg, #ffd700, #b8860b, #cd853f);
+  -webkit-background-clip: text; /* For Safari/Chrome */
   background-clip: text; /* Standard property */
-  text-shadow: 0px 10px 30px rgba(255, 153, 0, 0.8);
-  animation: pulseGlow 2s ease-in-out infinite;
+  text-shadow: 0px 10px 30px rgba(218, 165, 32, 0.9);
+  animation: royal-pulse 3s ease-in-out infinite;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif; /* Luxurious font style */
+  letter-spacing: 1.5px;
 }
 
 /* Hero Description */
 .hero p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   margin-bottom: 2rem;
-  line-height: 1.6;
-  color: #d1d5db;
-  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  line-height: 1.8;
+  color: #e5e7eb;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Merriweather', serif; /* Sophisticated look */
 }
 
 /* Call-to-Action Buttons */
@@ -438,37 +450,53 @@ body {
 }
 
 .cta-button {
-  background: linear-gradient(90deg, #f59e0b, #ef4444);
+  background: linear-gradient(90deg, #e8af00, #e25822);
   color: #ffffff;
-  padding: 1rem 2.8rem;
+  padding: 0.9rem 2.5rem;
   border: none;
   border-radius: 50px;
   font-weight: bold;
   font-size: 1rem;
+  font-family: 'Merriweather', serif;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0px 10px 20px rgba(245, 158, 11, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0px 8px 20px rgba(218, 165, 32, 0.6);
 }
 
 .cta-button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 15px 30px rgba(239, 68, 68, 0.7);
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0px 15px 30px rgba(218, 165, 32, 0.8);
+  background: linear-gradient(90deg, #e25822, #e8af00);
 }
 
 .secondary-button {
-  padding: 1rem 2.8rem;
+  padding: 0.9rem 2.5rem;
   font-size: 1rem;
   font-weight: bold;
-  border: 2px solid #facc15;
-  color: #facc15;
+  border: 2px solid #f9c802;
+  color: #f9c802;
   border-radius: 50px;
   background: transparent;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
+  font-family: 'Playfair Display', serif;
 }
 
 .secondary-button:hover {
-  background-color: #facc15;
+  background: #f9c802;
   color: #000000;
+  transform: translateY(-5px) scale(1.03);
+  border-color: #ffd700;
+}
+
+/* Animations */
+@keyframes gradient-glow {
+  0% { background-position: 0%; }
+  100% { background-position: 100%; }
+}
+
+@keyframes royal-pulse {
+  0%, 100% { text-shadow: 0px 10px 30px rgba(218, 165, 32, 0.9); }
+  50% { text-shadow: 0px 15px 40px rgba(218, 165, 32, 1); }
 }
 
 /* Hero Image */
