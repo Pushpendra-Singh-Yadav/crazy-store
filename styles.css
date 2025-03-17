@@ -376,8 +376,10 @@ body {
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.7); /* Fallback for unsupported browsers */
+
 }
+
 
 /* Hero Content */
 .hero-content {
@@ -401,8 +403,8 @@ body {
   font-size: 3.7rem;
   font-weight: bold;
   background: linear-gradient(90deg, #facc15, #f97316, #fb923c);
-  background-clip: text;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /* Prefixed version */
+  background-clip: text; /* Standard version */
   color: transparent;
   animation: shine 3s linear infinite;
   display: inline-block;
@@ -488,10 +490,35 @@ body {
 /* Floating Elements */
 .floating-circle {
   position: absolute;
+  width: 100px; /* Ensure consistent sizing */
+  height: 100px; /* Ensure consistent sizing */
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  animation: float 6s ease-in-out infinite alternate;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  animation: float 6s ease-in-out infinite alternate, rotate 8s linear infinite;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Keyframes for floating effect */
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  100% {
+    transform: translateY(10px) translateX(-10px);
+  }
+}
+
+/* Keyframes for rotation effect */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .floating-circle-1 {
